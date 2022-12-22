@@ -105,4 +105,24 @@
   color: var(--white);
   font-weight: bold;
   cursor: pointer;
+
+  transition: background 0.1s;
+}
+
+.commentForm footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForm:focus-within footer {
+  visibility: visible;
+  max-height: none; 
+}
+
+.commentForm button:hover {
+  background: var(--green-300);
+}
+
+.commentList {
+  margin-top: 1.5rem;
 }
